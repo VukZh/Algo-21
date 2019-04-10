@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class FindPrefixesApp {
 
-    public static String[] parseFile(String strpath) { // функция чтения с разивкой по строкам файла (разделитель - перевод строки)
+    public static String[] parseFile(String strpath) { // функция чтения с разбивкой по строкам файла (разделитель - перевод строки)
         Path path = Paths.get(strpath);
         try (Stream<String> lines = Files.lines(path)) {
             ArrayList<String> result = new ArrayList<String>();
